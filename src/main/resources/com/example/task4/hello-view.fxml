@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task4.HelloController">
+   <center>
+      <ImageView fx:id="screen" fitHeight="314.0" fitWidth="485.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Pane prefHeight="90.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="94.0" layoutY="51.0" mnemonicParsing="false" onAction="#NextBtn" text="След." />
+            <Button layoutX="36.0" layoutY="51.0" mnemonicParsing="false" onAction="#PrevBtn" text="Пред." />
+            <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#StartBtn" text="Старт" />
+            <Button layoutX="117.0" layoutY="13.0" mnemonicParsing="false" onAction="#PauseBtn" text="Пауза" />
+            <Button layoutX="67.0" layoutY="13.0" mnemonicParsing="false" onAction="#StopBtn" text="Стоп" />
+            <TextField fx:id="DelayField" layoutX="226.0" layoutY="26.0" promptText="Время задержки " />
+            <Button layoutX="382.0" layoutY="26.0" mnemonicParsing="false" onAction="#SetBtn" text="Установить" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
